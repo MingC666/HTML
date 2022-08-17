@@ -9,12 +9,11 @@ body {
 a
 {
 	font-size: 20px;
-	color: red;
 }
 h1 {
-    color: Black;
-	font-size: 30px;
-    text-align: center;
+	text-align: center;
+	background-color: lightseagreen;
+	color: purple;
 }
 
 p {
@@ -26,34 +25,106 @@ p {
 </head>	
 <body>
 
-<h1>h1 tage instance</h1>
-<h2>h2 tage instance</h2>
-<h3>h3 tage instance</h3>
-<h4>h4 tage instance</h4>
-<h5>h5 tage instance</h5>
+
+				<!-------------------------------------------- STRT ---------------------------------------->
+<!------------------------- heading ----------------------------------------->
+<h1>Heading</h1>
+<h1 style="background-color:lightgray;">h1 tage instance</h1>
+<h2 style="background-color:lightgreen; font-family:verdana;">h2 tage instance</h2>
+<h3 style="background-color:tomato; font-family:courier;">h3 tage instance</h3>
+<h4 style="text-align:center;">h4 tage instance</h4>
+<h5 style="text-align:right;">h5 tage instance</h5>
 <h6>h6 tage instance</h6>
-<br>
+<hr>
 <br>
 <br>
 
-<p title="tile attribute as pop tip">First paragraph.<br>
+
+
+<!------------------------- Paragraph ----------------------------------------->
+<h1>Paragraph</h1>
+<p title="tile attribute as pop tip" style="text-align:center;">First paragraph.
+	<br>
 	This is the sentence in the new line of the first paragraph
-	(Need 'br' tag for it)</p>
-<p><strong>Another paragraph with 'strong' tage</strong></p>
+	(Need &lt;br&gt; tag for it)
+	<br>
+	Also using attribute 'text-align' set this to center.
+</p>
+<p style="font-size:200%">size of <mark>200%<sub>&lt;mark&gt; used</sub></mark> paragraph</p>
+<p><strong>This paragraph using &lt;strong&gt; tage and <sup>&lt;sup&gt;</sup></strong></p>
+<p><b>This paragraph using<sub> &lt;b&gt; </sub>tage and <sub>&lt;sub&gt;</sub></b></p>
+<p><i>This paragraph using &lt;i&gt; tag </i></p>
+<p><em>This paragraph using &lt;em&gt; tag </em></p>
+<p><del>This paragraph using &lt;del&gt; tag</p>
+<p><ins>This paragraph using &lt;ins&gt; tag, it's just underline the text???</ins></p>
+<p><small>This paragraph using &lt;small&gt; tag</small></p>
 <p style="color:red; font-size:40;">Another another paragraph with 'style' attribute</p>
-<br>
+<pre style="background-color:powderblue; color:blue; font-size:20px;">
+This paragraph is using &lt;pre&gt;
+	tag, which is back-end base format for the 
+							paragraph
+</pre>
+<hr>
 <br>
 <br>
 
-<a href="http://www.google.com">Jump to google page; Using 'href' tage</a> </br>
-<br>
-<br>
-<br>
 
+
+<!------------------------- img/web ----------------------------------------->
+<h1>Img/Web</h1>
+<p style="color:purple">Color reference: <a href="https://htmlcolorcodes.com/zh/"> HTML color reference</a>, 
+	<a href="https://www.w3schools.com/colors/colors_names.asp">w3school</a></p>
+<p><a href="http://www.google.com">Jump to google page; Using 'href' tage</a></p>
+<br>
+<br>
+<br>
+<br>
 <img src="haizei1.jpg" alt="opp, u cannot see it" width="350" height="220">
+<p><cite>One Piece</cite> by ...... </p>
+<hr>
 <br>
 <br>
 <br>
+
+
+<!------------------------- quotation ----------------------------------------->
+<h1>Quotation</h1>
+<blockquote cit="www.xxx.com"> Some source information</blockquote>
+<p> Another quotation like <q>Life is a beautiful advanture</q></p>
+<p> <abbr title="Ming Chen">MC</abbr> has a exceptional talen ------------MC</p>
+<bdo dir="rtl">If you can read this line, you know this is using &lt;bdo&gt; tag to complish this</bdo>
+<hr>
+<br>
+<br>
+<br>
+
+
+<!------------------------- color ----------------------------------------->
+<h1>Color</h1>
+<h1 style="border: 3px solid violet; background-color:RGBA(249,112,182,0.5)">RGBA(249,112,182,0.5)</h1>
+<h1 style="border: 3px solid violet; background-color:RGB(249,112,182)">RGB(249,112,182)</h1>
+<hr>
+<br>
+<br>
+<br>
+
+
+<!------------------------- xxxxxxxx ----------------------------------------->
+<h1>xxxxxxxxx</h1><hr>
+<br>
+<br>
+<br>
+
+
+<!------------------------- xxxxxxxx ----------------------------------------->
+<h1 style="background-color:red;font-size:200%">xxxxxxxxx</h1><hr>
+<br>
+<br>
+<br>
+
+
+<!------------------------- xxxxxxxx ----------------------------------------->
+<h1 style="background-color:red;font-size:200%">xxxxxxxxx</h1>
 
 <button type="button"
 onclick="document.getElementById('demo').innerHTML = Date()"> 
@@ -63,6 +134,7 @@ Click me to display Date and Time.</button>
 <br>
 <br>
 
+<hr>
 <ul>
   <li>Coffee</li>
   <li>Tea</li>
@@ -75,5 +147,11 @@ Click me to display Date and Time.</button>
 </ol> 
 
 
+<address style="text-align:center">
+Coding by: MC<br>
+23333 Somewhere St,<br>
+CA, 66666
+
+</address>
 </body>
 </html>
